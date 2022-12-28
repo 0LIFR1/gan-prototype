@@ -1,7 +1,4 @@
 # Generative Adversarial Networks (GAN) prototype
-Generating Icons Using Deep Nets
-
-More details will follow
 
 <a name="readme-top"></a>
 
@@ -14,14 +11,12 @@ More details will follow
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
-
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
   <ol>    
     <li><a href="#about-the-project">About the Project</a></li>
-    <li><a href="#cluster-topology">Cluster Topology</a></li>
-    <li><a href="#architecture">Architecture</a></li>
+    <li><a href="#implementation">Implementation</a></li>
     <li><a href="#built-with">Built With</a></li>
   </ol>
 </details>
@@ -36,21 +31,25 @@ Status: Prototype based on [Deep Learning Cookbook.](https://www.oreilly.com/lib
 **Summary**:<br>
 Generating new icons using deep nets by training two networks, one to generate icons and another to distinguish between generated icons and real icons. The competition between the two leads to better results.
 
-## Cluster Topology
+## Implementation
+
+Main tasks:
+- Get large set of icons for training, extracted from the Mac application Icons8
+- Converting the icons to a Tensor representation by concatenating and normalizing them
+- Generate icons using a variational autoencoder
+- Improve the autoencoder’s performance by using data augmentation
+- Building a Generative Adversarial Network (image generator and an image discriminator working together)
+- Training Generative Adversarial Networks (TensorFlow framework to run both networks together)
+- Showing the icons the GAN produces by adding an icon renderer after each epoch
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Architecture
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- BUILT WITH -->
 ## Built With
 
-[![Linux][linux-shield]][linux-url]\
-[![Apache Hadoop][apache-hadoop-shield]][apache-hadoop-url] [![Spark][spark-shield]][spark-url] [![Cassandra][cassandra-shield]][cassandra-url]\
-[![Python][python-shield]][python-url] [![Pandas][pandas-shield]][pandas-url] [![Numpy][numpy-shield]][numpy-url] [![Matplotlib][matplotlib-shield]][matplotlib-url]
+[![Python][python-shield]][python-url] [![Keras][keras-shield]][keras-url] [![Scikit-learn][scikit-learn-shield]][scikit-learn-url] [![Tensorflow][tensorflow-shield]][tensorflow-url] [![Numpy][numpy-shield]][numpy-url] [![Matplotlib][matplotlib-shield]][matplotlib-url]
 
 <!-- Logo examples
 <div>
@@ -99,3 +98,7 @@ Generating new icons using deep nets by training two networks, one to generate i
 [numpy-url]: https://numpy.org/
 [matplotlib-shield]: https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black
 [matplotlib-url]: https://matplotlib.org/
+[tensorflow-shield]: https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white
+[tensorflow-url]: https://www.tensorflow.org/
+[keras-shield]: https://img.shields.io/badge/Keras-FF0000?style=for-the-badge&logo=keras&logoColor=white
+[keras-url]: https://keras.io/
