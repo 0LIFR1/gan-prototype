@@ -1,5 +1,7 @@
 # Generative Adversarial Networks (GAN) prototype
 
+<img src="https://github.com/0LIFR1/gan-prototype/blob/main/GAN.png">
+
 <a name="readme-top"></a>
 
 <!-- PROJECT SHIELDS -->
@@ -41,7 +43,6 @@ Main tasks:
 - Building a Generative Adversarial Network (image generator and an image discriminator working together)
 - Training Generative Adversarial Networks (TensorFlow framework to run both networks together)
 - Showing the icons the GAN produces by adding an icon renderer after each epoch
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
